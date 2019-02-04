@@ -149,6 +149,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius:50%;
 }
 
+#team p {
+  font-size: 17px;
+  color: #4b4a4a;
+}
+
 .team-img img {
   width: 100%;
   height: auto;
@@ -180,7 +185,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #steps {
-  padding: 5em 0;
+  padding-top: 4em;
+  padding-bottom: 2em;
 }
 
 #steps .row p {
@@ -192,7 +198,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #newsnetworks-title {
-  padding: 2em 0;
+  padding-top: 4em;
+  padding-bottom: 2em;
 }
 
 .step {
