@@ -129,14 +129,54 @@ h1, h2, h3, h4, h5, h6 {
   height: 400px;
 }
 
+#team {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: lightgray;
+}
+
 .intro h1 {
   color: #fff;
   font-weight: 900; 
 }
 
-.intro, #newsnetworks{
+.team-img {
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius:50%;
+}
+
+.team-img img {
+  width: 100%;
+  height: auto;
+}
+
+#leandro {
+  margin-top: -80px;
+}
+
+#jonathan {
+  margin-top: -85px;
+}
+
+#thejas {
+  margin-top: -85px;
+}
+
+.intro {
   padding: 7em 0;
   clear: both; 
+}
+
+.intro p {
+  font-size: 20px;
+}
+
+#newsnetworks {
+  padding: 2em 0;
 }
 
 #steps {
@@ -152,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #newsnetworks-title {
-  padding: 1em 0;
+  padding: 2em 0;
 }
 
 .step {
@@ -244,6 +284,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 
+#team .step .desc {
+  vertical-align: middle;
+  font-size: 20px;
+  color: #4b4a4a;
+}
+
+#team .step .desc a {
+  color: #89bd3a;
+}
+
 .network-entry {
   display: block;
   height: 450px;
@@ -292,6 +342,8 @@ footer {
   display: flex;
   margin-top: 3em;
   background: #000000;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 footer p {
