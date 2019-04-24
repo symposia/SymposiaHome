@@ -61,7 +61,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading animate-box">
 						<h2>Get an overview of any developing news story</h2>
-						<p>We analyze news articles to identify the "viewpoints" of a news network for a given story, make useful visualizations, and help you compare important information.</p>
+						<p>We aggregate hundreds of articles to identify the "viewpoints" of a news network for a given story, make useful visualizations, and help you compare important information.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -72,7 +72,7 @@
 							</span>
 							<div class="desc">
 								<h3>Powered by AI</h3>
-								<p>We use advanced AI topic models to find out the "viewpoints" of a given network with a story.</p>
+								<p>We aggregate and use AI models to identify "meta-stories" within a larger news story.</p>
 							</div>
 						</div>
 					</div>
@@ -83,7 +83,7 @@
 							</span>
 							<div class="desc">
 								<h3>Lay of the Land</h3>
-								<p>We make a visualization that lets you see the lay of the land ahead on the issues you care about.</p>
+								<p>We make a visualization that lets you see the current topics on the most important issues of the day.</p>
 							</div>
 						</div>
 					</div>
@@ -106,8 +106,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading animate-box">
-						<h2>Interested?</h2>
-						<p> We're looking for help from mentors, testers, and folks who are just plain interested in the news. Contact any of us below by email and let us know if you can help.</p>
+						<h2>Our Team</h2>
+						<!-- <p> We're looking for help from mentors, testers, and folks who are just plain interested in the news. Contact any of us below by email and let us know if you can help.</p> -->
 					</div>
 				</div>
 				<div class="row">
@@ -117,7 +117,7 @@
 								<img src='./images/aman.jpg'>
 							</div>
 							<div class="desc">
-								<a href="mailto:aarya22@uw.edu">Aman Arya</a><br>
+								<a href="https://www.linkedin.com/in/aman-arya-70864510a/">Aman Arya</a><br>
 								<span class="title">Lead Developer</span>
 							</div>
 						</div>
@@ -139,7 +139,7 @@
 								<img id='jonathan' src='./images/jonathan.jpg'>
 							</div>
 							<div class="desc">
-								<a href="mailto:jyc24@uw.edu">Jonathan Chuang</a><br>
+								<a href="https://www.linkedin.com/in/jchuang02/">Jonathan Chuang</a><br>
 								<span class="title">Lead Designer</span>
 							</div>
 						</div>
@@ -150,7 +150,7 @@
 								<img id='thejas' src='./images/thejas.jpg'>
 							</div>
 							<div class="desc">
-								<a href="mailto:pvthejas@uw.edu">Thejas Vidyasagar</a><br>
+								<a href="https://www.linkedin.com/in/thejasvidyasagar/">Thejas Vidyasagar</a><br>
 								<span class="title">Full-stack Developer</span>
 							</div>
 						</div>
@@ -163,13 +163,25 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center heading animate-box">
-						<h2>News Networks We Parse Through</h2>
+						<h2>Architecture</h2>
+					</div>
+					<div class="animate-box">
+						<div id="arch" class="col-md-12">
+							<div class="picture-center">
+								<img src="images/arch.png" alt="software architecture plan"/>
+							</div>
+							<div class="desc">
+								<p>
+									System Architecture is a fairly standard web application model which is hosted on AWS services. The Web application server itself is hosted on an EC2 service, which calls an API known as Event Registry, an online API which scrapes news articles from hundreds of sources. For all the articles in a given story, each article is fed through the ML servers, hosted by Amazon Sagemaker for summarization, and all the articles together are sent in for clustering. Once all the articles are clustered, keywords are extracted from each cluster to help users identify the content of the clusters. The summaries, clusters, and tags are sent to the Amazon DynamoDB which talks to the web application servers and displays the information.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="newsnetworks">
+		<!-- <div id="newsnetworks">
 			<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-4 no-gutters text-center animate-box">
@@ -240,13 +252,13 @@
 				</div>
 			</div>
 			</div>
-		</div>
-		<div class="col-md-8 col-md-offset-2 text-center">
+		</div> -->
+		<!-- <div class="col-md-8 col-md-offset-2 text-center">
 			<p>
 				Disclaimer: We have no affiliation with the respective companies.
 				All logos belong the respective companies.
 			</p>
-		</div>
+		</div> -->
 		<footer role="contentinfo">
 			<p>© 2019 Team Symposia, iSchool, University of Washington 2019</p>
 		</footer>
